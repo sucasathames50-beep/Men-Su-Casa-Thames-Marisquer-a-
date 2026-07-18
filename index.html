@@ -88,6 +88,26 @@ h2 {
 .instagram {
   background: #b01212;
 }
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+
+  background: #b01212;        /* 👈 fondo oscuro */
+  color: #fff;
+
+  text-align: center;
+  border-top: 4px solid #b01212;
+}
+
+.footer strong {
+  font-size: 16px;
+}
+
+.pagos, .direccion {
+  margin: 10px 0;
+  font-size: 14px;
+}
+
 
 </style>
 </head>
@@ -95,8 +115,8 @@ h2 {
 <body>
 
 <header>
-  <h1> MENÚ SU CASA THAMES</h1>
-  <h2>MARISQUERÍA</h2>
+  <h1> Restaurante "SU CASA" San Isidro</h1>
+  <h3>MARISCOS - PESCADOS - PARRILLA - PASTAS</h3>
 </header>
 
 
@@ -117,60 +137,50 @@ details {
 }
 
 summary {
-
   font-family: 'arial', serif;
-
   font-size: 26px;
-
   font-weight: bold;
-
   color: #000000;
-
   cursor: pointer;
-
   list-style: none;
-
 }
 
 summary::-webkit-details-marker {
-
   display: none;
-
 }
 
 summary::after {
-
-  content: "▼";
-
+  content: "+";
   float: right;
-
-  transition: transform 0.3s;
-
+  font-size: 28px;
 }
 
-details[open] summary::after {
-
-  transform: rotate(180deg);
-
+details[open] > summary::after {
+  content: "−";
 }
 
-.opcion {
+.aviso {
+  background: #fff;
+  border: 2px solid #b01212;
+  border-radius: 10px;
 
   padding: 10px;
 
-  margin-top: 8px;
+  width: fit-content;   /* 👈 CLAVE */
+  max-width: 500px;
 
-  border-radius: 8px;
+  margin: 20px auto;    /* 👈 centra el bloque */
 
-  background: white;
-
-  border-left: 4px solid #000000;
-
-  font-family: 'arial', serif;
-
+  text-align: center;
+  font-weight: bold;
 }
 
+
 </style>
+
+<p class="aviso">
+  Las 1/2 porciones y las porciones compartidas recargan en un 30% adicional. Ejemplo: Porción $1.000 - 1/2 porción $650. 
+</p>
 
 <DETAILS>
   <summary style="font-size: 24px ; color:black; font-weight:bold;font">Entradas Frías</summary>
@@ -186,6 +196,9 @@ details[open] summary::after {
   <div class="menu-item"><span>Jamón serrano con ensalada rusa</span><span>$27.000</span></div>
   <div class="menu-item"><span>Jamón serrano con ananá ó queso</span><span>$29.000</span></div>
   <div class="menu-item"><span>Jamón serrano con palmitos</span><span>$29.000</span></div>
+  <div class="menu-item"><span>Gruyere ó Roquefort</span><span>$21.000</span></div>
+  <div class="menu-item"><span>Mozzarella Capresse (6 u.)</span><span>$21.000</span></div>
+  <div class="menu-item"><span>Capresse (Cada rodaja)</span><span>$4.000</span></div>
   <div class="menu-item"><span>Langostinos con salsa golf</span><span>$39.000</span></div>
   <div class="menu-item"><span>Lengua a la vinagreta</span><span>$12.000</span></div>
   <div class="menu-item"><span>Matambre casero arrollado con rusa</span><span>$27.000</span></div>
@@ -195,6 +208,9 @@ details[open] summary::after {
   <div class="menu-item"><span>Sardinas con tomate y cebolla</span><span>$13.000</span></div>
   <div class="menu-item"><span>Tomate relleno de atún (2 u.)</span><span>$16.000</span></div>
   <div class="menu-item"><span>Vitel thoné</span><span>$23.000</span></div>
+  <div class="menu-item"><span>Aceitunas verdes, negras y pickles</span><span>$3.000</span></div>
+  <div class="menu-item"><span>Aceitunas a la calabresa</span><span>$3.500</span></div>
+  <div class="menu-item"><span>Cóctel con palta, palmitos, langostinos y salsa golf</span><span>$42.000</span></div>
 </div>
 </DETAILS>
 
@@ -202,17 +218,21 @@ details[open] summary::after {
   <summary style="font-size: 24px ; color:black; font-weight:bold;font">Entradas Calientes</summary>
 <div class="section">
   <div class="menu-item"><span>Champignones a la provenzal</span><span>$13.000</span></div>
-  <div class="menu-item"><span>Mejillones con cáscara provenzal</span><span>$32.500</span></div>
   <div class="menu-item"><span>Morrones fritos al ajo</span><span>$11.000</span></div>
   <div class="menu-item"><span>Mozzarella milanesa con fileto (2 u.)</span><span>$10.000</span></div>
   <div class="menu-item"><span>Provoleta al oreganato</span><span>$15.000</span></div>
   <div class="menu-item"><span>Provoleta "Su Casa" (Tomate, jamón y morrones)</span><span>$16.500</span></div>
-  <div class="menu-item"><span>Vieiras (Al verdeo ó Roquefort)</span><span>$29.000</span></div>
+  <div class="menu-item"><span>Acelga gratinada</span><span>$13.500</span></div>
+  <div class="menu-item"><span>Chauchas salteadas ó gratinadas</span><span>$13.500</span></div>
+  <div class="menu-item"><span>Brócolis gratinados</span><span>$16.000</span></div>
+  <div class="menu-item"><span>Espárragos a la parmesana</span><span>$16.000</span></div>
+  <div class="menu-item"><span>Panaché de verduras</span><span>$13.500</span></div>
+  <div class="menu-item"><span>Vegetales vaporizados</span><span>$16.000</span></div>
 </div>
 </DETAILS>
 
 <DETAILS>
-  <summary style="font-size: 24px ; color:black; font-weight:bold;font">Rabas, Calamarettes y Langostinos</summary>
+  <summary style="font-size: 24px ; color:black; font-weight:bold;font">Rabas, Calamarettes, Langostinos, Vieiras y Mejillones</summary>
 <div class="section">
   <div class="menu-item"><span>Rabas a la romana</span><span>$26.500</span></div>
   <div class="menu-item"><span>Rabas a la provenzal</span><span>$28.000</span></div>
@@ -221,28 +241,21 @@ details[open] summary::after {
   <div class="menu-item"><span>Calamarettes a la Navarra, Leonesa o Vizcaína</span><span>$39.500</span></div>
   <div class="menu-item"><span>Langostinos al ajillo</span><span>$39.000</span></div>
   <div class="menu-item"><span>Langostinos a la milanesa</span><span>$39.000</span></div>
+  <div class="menu-item"><span>Vieiras (Al verdeo ó Roquefort)</span><span>$29.000</span></div>
+  <div class="menu-item"><span>Mejillones con cáscara provenzal</span><span>$32.500</span></div>
 </div>
 </DETAILS>
 
 <DETAILS>
-  <summary style="font-size: 24px ; color:black; font-weight:bold;font">Quesos, Hortalizas, Encurtidos y Aceitunas</summary>
+  <summary style="font-size: 24px ; color:black; font-weight:bold;font">Minutas (Milanesas, Supremas, Tortillas y Omelettes)</summary>
 <div class="section">
-  <div class="menu-item"><span>Gruyere ó Roquefort</span><span>$21.000</span></div>
-  <div class="menu-item"><span>Mozzarella Capresse (6 u.)</span><span>$21.000</span></div>
-  <div class="menu-item"><span>Capresse (Cada rodaja)</span><span>$4.000</span></div>
-  <div class="menu-item"><span>Acelga gratinada</span><span>$13.500</span></div>
-  <div class="menu-item"><span>Chauchas salteadas ó gratinadas</span><span>$13.500</span></div>
-  <div class="menu-item"><span>Brócolis gratinados</span><span>$16.000</span></div>
-  <div class="menu-item"><span>Espárragos a la parmesana</span><span>$16.000</span></div>
-  <div class="menu-item"><span>Panaché de verduras</span><span>$13.500</span></div>
-  <div class="menu-item"><span>Vegetales vaporizados</span><span>$16.000</span></div>
-  <div class="menu-item"><span>Aceitunas verdes, negras y pickles</span><span>$3.000</span></div>
-  <div class="menu-item"><span>Aceitunas a la calabresa</span><span>$3.500</span></div>
-</DETAILS>
-
-  <DETAILS>
-  <summary style="font-size: 24px ; color:black; font-weight:bold;font">Tortillas y Omelettes</summary>
-<div class="section">
+  <div class="menu-item"><span>Suprema (Sin guarnición)</span><span>$17.000</span></div>
+  <div class="menu-item"><span>Suprema a la Napolitana (Sin guarnición)</span><span>$22.000</span></div>
+  <div class="menu-item"><span>Suprema a la Suiza ó a la Maryland</span><span>$34.000</span></div>
+  <div class="menu-item"><span>Milanesa de Ternera (Sin guarnición)</span><span>$20.500</span></div>
+  <div class="menu-item"><span>Milanesa de Ternera a la Napolitana (Sin guarnición)</span><span>$25.500</span></div>
+  <div class="menu-item"><span>Milanesa de Peceto (4 u. con guarnición de papas fritas)</span><span>$33.000</span></div>
+  <div class="menu-item"><span>Milanesa de Peceto (4 u. con guarnición de papas fritas)</span><span>$38.000</span></div>
   <div class="menu-item"><span>Huevos fritos (2 u.)</span><span>$3.000</span></div>
   <div class="menu-item"><span>Omelette con queso, con jamón ó mixto</span><span>$12.000</span></div>
   <div class="menu-item"><span>Omelette de champignones</span><span>$14.000</span></div>
@@ -355,18 +368,22 @@ details[open] summary::after {
 <div class="menu-item"><span></span></div>
 <div class="menu-item"><span></span></div>
   <div class="menu-item"><span>Pulpo Español </span><span>$125.000</span></div>
-<span>A LA GALLEGA (con papas natural, pimentón y aceite de oliva) ó</span><span> A LA ESPAÑOLA (cazuela)</span>
+<span><strong>A LA GALLEGA</strong> (con papas natural, pimentón y aceite de oliva) ó</span><span><strong> A LA ESPAÑOLA</strong> (cazuela)</span>
 </div>
 </details>
 
 <details>
   <summary style="font-size: 24px ; color:black; font-weight:bold;font">Pescados</summary>
-<div class="section">
+<div class="section"> 
+
+<h3>A LA ROMANA</h3>
 <div class="menu-item"><span>Merluza a la Romana</span><span>$19.000</span></div>
 <div class="menu-item"><span>Lenguado a la Romana</span><span>$26.500</span></div>
 <div style="font-size: 16px ; color:rgb(123, 121, 121);font-family: 'Times New Roman', Times, serif;"<span>Sin guarnición</span></div>
 <div class="menu-item"><span></span></div>
 <div class="menu-item"><span></span></div>
+
+<h3>GRILLADOS</h3>
 
 <div class="menu-item"><span>Pacú - Lenguado Grillado</span><span>$25.000</span></div>
 <div class="menu-item"><span>Abadejo - Trucha Grillados</span><span>$30.000</span></div>
@@ -376,15 +393,28 @@ details[open] summary::after {
 <div class="menu-item"><span></span></div>
 <div class="menu-item"><span></span></div>
 
+<h3>CON SALSA Y GUARNICIÓN</h3>
+
+<div class="menu-item"><span>Merluza</span><span>$25.500</span></div>
+<div class="menu-item"><span>Pacú, Lenguado y Brótola</span><span>$33.000</span></div>
+<div class="menu-item"><span>Abadejo y Trucha</span><span>$37.000</span></div>
+<div class="menu-item"><span>Salmón Rosado</span><span>$44.000</span></div>
+
+<div class="menu-item"><span></span></div>
+
+<div style="font-size: 22px ; color:rgb(123, 121, 121);font-family: 'Times New Roman', Times, serif;"<span>Ajillo · Crema de Puerro · Aldea Benito · Chablis · Francesa · Vasca · Crema de Limón · Gratén · Roquefort</span></div>
+
+<div class="menu-item"><span></span></div>
+
 <!-- BLOQUE DE SALSAS -->
 <details class="salsas-box">
-  <summary>Con las siguientes salsas:</summary>
+  <summary>Detalle de Salsas</summary>
   <div class="menu-item"><span></span></div>
   <div class="salsa"><strong>Al ajillo:</strong> ajo picado, oliva y pimentón.</div>
   <div class="menu-item"><span></span></div>
   <div class="salsa"><strong>Crema de puerro:</strong> puerro salteado en manteca y crema.</div>
   <div class="menu-item"><span></span></div>
-  <div class="salsa"><strong>Aldea Benito:</strong> mantequilla, apio, cebolla, puerro, vino blanco, crema, mostaza, sal y pimienta.Guarción de zanahoria, chaucha salteada y crocantes de papa.</div>
+  <div class="salsa"><strong>Aldea Benito:</strong> mantequilla, apio, cebolla, puerro, vino blanco, crema, mostaza, sal y pimienta. Guarción de zanahoria, chaucha salteada y crocantes de papa.</div>
   <div class="menu-item"><span></span></div>
   <div class="salsa"><strong>Chablis:</strong> cebollita rehogada en manteca con bechamel, crema natural y champignones. Guarnición puré de papas y papas rejilla. </div>
   <div class="menu-item"><span></span></div>
@@ -400,17 +430,25 @@ details[open] summary::after {
 
 </details>
 
-<div class="menu-item"><span>Merluza</span><span>$25.500</span></div>
-<div class="menu-item"><span>Pacú, Lenguado y Brótola</span><span>$33.000</span></div>
-<div class="menu-item"><span>Abadejo y Trucha</span><span>$37.000</span></div>
-<div class="menu-item"><span>Salmón Rosado</span><span>$44.000</span></div>
+<div class="menu-item"><span></span></div>
+<div class="menu-item"><span></span></div>
+
+<h3>CON SALSA DE MARISCOS Y GUARNICIÓN</h3>
+
+<div class="menu-item"><span>Merluza</span><span>$34.500</span></div>
+<div class="menu-item"><span>Pacú, Lenguado y Brótola</span><span>$42.000</span></div>
+<div class="menu-item"><span>Abadejo y Trucha</span><span>$45.000</span></div>
+<div class="menu-item"><span>Salmón Rosado</span><span>$53.000</span></div>
 
 <div class="menu-item"><span></span></div>
+
+<div style="font-size: 22px ; color:rgb(123, 121, 121);font-family: 'Times New Roman', Times, serif;"<span></span>Pescadores · Mediterránea · Su Casa · Margheritte · Langostinos · Cheff · Puerto Nuevo · Ríos de Cristian</span></div>
+
 <div class="menu-item"><span></span></div>
 
 <!-- BLOQUE DE SALSAS -->
 <details class="salsas-box">
-  <summary>Con las siguientes salsas:</summary>
+  <summary>Detalle de Salsas</summary>
   <div class="menu-item"><span></span></div>
   <div class="salsa"><strong>De pescadores:</strong> puerro, calamares, ajo, morrón, cebolla, jamón crudo, perejil, pimentón y vino blanco. Gratinado con parmesano. Guarnición crocantes de papa.</div>
   <div class="menu-item"><span></span></div>
@@ -430,17 +468,12 @@ details[open] summary::after {
  
 </details>
 
-<div class="menu-item"><span>Merluza</span><span>$34.500</span></div>
-<div class="menu-item"><span>Pacú, Lenguado y Brótola</span><span>$42.000</span></div>
-<div class="menu-item"><span>Abadejo y Trucha</span><span>$45.000</span></div>
-<div class="menu-item"><span>Salmón Rosado</span><span>$53.000</span></div>
-
 <div class="menu-item"><span></span></div>
 <div class="menu-item"><span></span></div>
 
-<div class="menu-item"><span>CAZUELA DE PESCADOS: variedad de pescados cocidos en salsa fileto, portuguesa y fumet de pescados. Guarnición de papas españolas.</span><span> $63.000</span></div>
+<div class="salsa"><strong>CAZUELA DE PESCADOS:</strong> variedad de pescados cocidos en salsa fileto, portuguesa y fumet de pescados. Guarnición de papas españolas. <strong>$63.000</strong></div>
 <div class="menu-item"><span></span></div>
-<div class="menu-item"><span>LENGUADO BRETONA: salsa con manteca, ajo, champignones, tomate, mejillones y langostinos; sobre colchón de crema de espinacas. Guarnición de papas españolas.</span><span> $42.000</span></div>
+<div class="salsa"><strong>LENGUADO BRETONA:</strong> salsa con manteca, ajo, champignones, tomate, mejillones y langostinos; sobre colchón de crema de espinacas. Guarnición de papas españolas. <strong>$42.000</strong></div>
 
 </div>
 </details>
@@ -455,34 +488,31 @@ details[open] summary::after {
 </details>
 
 <details>
-  <summary style="font-size: 24px ; color:black; font-weight:bold;font">Pollos Elaborados</summary>
+  <summary style="font-size: 24px ; color:black; font-weight:bold;font">Pollos Elaborados: $27.000</summary>
 
 <div class="menu-item"><span></span></div>
-<div class="menu-item"><span></span></div>
-
-<h2>Pollos Elaborados:<span> $27.000</span></h2>
 
     <!-- BLOQUE DE SALSAS -->
 <details class="salsas-box">
   <summary>SALSAS</summary>
-    <div class="menu-item"><span></span></div>
+  <div class="menu-item"><span></span></div>
   <div class="salsa"><strong>1/2 Pollo Deshuesado:</strong> al ajillo, a la calabresa, a la provenzal, al verdeo ó al champignon.</div>
   <div class="menu-item"><span></span></div>
   <div class="salsa"><strong>Del Bosque:</strong> lomitos con champignones salteados en mantequilla, mostaza francesa, toquecitos de ajo y aromatizado con hierbas naturales. Terminado con crema natural y jerez. Guarnición crocantes de papa.</div>
   <div class="menu-item"><span></span></div>
   <div class="salsa"><strong>Clavel del Aire:</strong> lomitos de pollo con vino blanco, morrón, cebolla valenciana, zanahorias, crema, champignones. Guarnición papas rejilla y arroz blanco.</div>
   <div class="menu-item"><span></span></div>
-  <div class="salsa"><strong>Salsa de Miel:</strong> lomitos con aceto balsámico, miel, pimienta negra, demiglase, mostaza francesa, juliana de manzana, ananá y duraznos glaceados.</div>
+  <div class="salsa"><strong>Salsa de Miel:</strong> lomitos con aceto balsámico, miel, pimienta negra, demi-glace, mostaza francesa, juliana de manzana, ananá y duraznos glaceados.</div>
   <div class="menu-item"><span></span></div>
   <div class="salsa"><strong>Crema de Oriente:</strong> lomitos con champignones, echalotte, jamones crudo y cocido, vino chardonnay, aceite de oliva, crema natural, queso parmesano. Acompañado de papas rejillas.</div>
   <div class="menu-item"><span></span></div>
-  <div class="salsa"><strong>Bogolino:</strong> muslitos cortados con cebollitas de verdeo, vino blanco seco, demiglace y papas noissete.</div>
+  <div class="salsa"><strong>Bogolino:</strong> muslitos cortados con cebollitas de verdeo, vino blanco seco, demi-glace y papas noissete.</div>
   <div class="menu-item"><span></span></div>
-  <div class="salsa"><strong>Dublin:</strong> lomitos salteados en manteca con jamón crudo y cocido, champignon, crema natural, puerro juliana, salsa barbacoa y demiglace. Acompañado con crocante de papa.</div>
+  <div class="salsa"><strong>Dublin:</strong> lomitos salteados en manteca con jamón crudo y cocido, champignon, crema natural, puerro juliana, salsa barbacoa y demi-glace. Acompañado con crocante de papa.</div>
   <div class="menu-item"><span></span></div>
   <div class="salsa"><strong>Paprika:</strong> lomitos, cebolla, tomate concasse, vino blanco, crema, paprika. Guarnición de espárragos y papas rejilla. </div>
   <div class="menu-item"><span></span></div>
-  <div class="salsa"><strong>Glaceado:</strong> 1/2 pollo deshuesado con salsa demiglace, miel y especias. Guarnición crema de espinaca.</div>
+  <div class="salsa"><strong>Glaceado:</strong> 1/2 pollo deshuesado con salsa demi-glace, miel y especias. Guarnición crema de espinaca.</div>
   <div class="menu-item"><span></span></div>
   <div class="salsa"><strong>Envuelto:</strong> 1/2 pollo cocido en su jugo sobre un colchón de espinacas, cebolla, morrón, queso gruyere, jamón, aceite de oliva, especias y limón. Guarnición de papas noissette.</div>
   <div class="menu-item"><span></span></div>
@@ -492,34 +522,24 @@ details[open] summary::after {
   <div class="menu-item"><span></span></div>
   <div class="salsa"><strong>Veracruz "Picante":</strong> Lomitos de pollo, tomate, ajo y cebollitas doradas en mantequilla; pimiento rojo, aceitunas verdes y vinagre. Gratinado con queso parmesano. Guarnición de huevo duro, aceitunas y papas rejilla.</div>
   <div class="menu-item"><span></span></div>
-
-<div class="menu-item"><span></span></div>
-<div class="menu-item"><span></span></div>
-
 </div>
 </details>
 
 <div class="menu-item"><span></span></div>
-<div class="menu-item"><span></span></div>
 
-  <div class="menu-item"><span>Arroz Mediterránea</span><span>$49.000</span></div>
-  <div class="menu-item"><span>Arroz Valenciana</span><span>$38.000</span></div>
+<div class="salsa"><strong>Arroz Mediterránea:</strong> cebolla, morrón, chorizo colorado, pollo, caldo de verduras, langostinos, arroz azafranado, manteca y champignones. <strong> $49.000</strong></div>
   <div class="menu-item"><span></span></div>
-  <div class="menu-item"><span>Suprema (Sin guarnición)</span><span>$17.000</span></div>
-  <div class="menu-item"><span>A la Napolitana (Sin guarnición)</span><span>$22.000</span></div>
-  <div class="menu-item"><span>A la Suiza ó Maryland</span><span>$34.000</span></div>
+<div class="salsa"><strong>Arroz Valenciana:</strong> tradicional arroz con pollo. <strong>$38.000</strong></div>
+  <div class="menu-item"><span></span></div>
 </div>
 </details>
 
 </details>
 
 <details>
-  <summary style="font-size: 24px ; color:black; font-weight:bold;font">Lomos de Cerdos Elaborados</summary>
+  <summary style="font-size: 24px ; color:black; font-weight:bold;font">Lomos de Cerdos Elaborados: $28.000</summary>
 
 <div class="menu-item"><span></span></div>
-<div class="menu-item"><span></span></div>
-
-<h2>Lomos de Cerdo Elaborados:<span> $28.000</span></h2>
 
     <!-- BLOQUE DE SALSAS -->
 <details class="salsas-box">
@@ -527,7 +547,7 @@ details[open] summary::after {
     <div class="menu-item"><span></span></div>
   <div class="salsa"><strong>Veracruz "Picante":</strong> lomitos de cerdo, tomate, ajo y cebollitas doradas en mantequilla; pimiento rojo, aceitunas verdes y vinagre. Gratinado con queso parmesano. Guarnición de huevo duro, aceitunas y papas rejilla.</div>
   <div class="menu-item"><span></span></div>
-  <div class="salsa"><strong>Diabla:</strong> salsa elaborada con cebolla, morrón, vino malbec, salsa demiglace y pimienta. Guarnición puré de espinacas.</div>
+  <div class="salsa"><strong>Diabla:</strong> salsa elaborada con cebolla, morrón, vino malbec, salsa demi-glace y pimienta. Guarnición puré de espinacas.</div>
   <div class="menu-item"><span></span></div>
   <div class="salsa"><strong>Secreto:</strong> lomos de cerdo, manteca, manzana, ciruela, durazno, jugo de naranja, miel, cognacs, salsa madera y estragón. Acompañado con papas a la crema.</div>
   <div class="menu-item"><span></span></div>
@@ -537,9 +557,9 @@ details[open] summary::after {
   <div class="menu-item"><span></span></div>
   <div class="salsa"><strong>Mediterránea:</strong> champignones salteados en salsa madera, morrón, jamón crocante, echalottes dorados en manteca y rociados con corte de oporto-vino cabernet. Acompañado con puré de calabaza y zanahorias glaceados.</div>
   <div class="menu-item"><span></span></div>
-  <div class="salsa"><strong>De Miel:</strong> salsa con aceto balsámico, miel, pimienta negra, demiglace, mostaza francesa, juliana de manzana, ananá y duraznos glaceados.</div>
+  <div class="salsa"><strong>De Miel:</strong> salsa con aceto balsámico, miel, pimienta negra, demi-glace, mostaza francesa, juliana de manzana, ananá y duraznos glaceados.</div>
   <div class="menu-item"><span></span></div>
-  <div class="salsa"><strong>Dublin:</strong> salteados en manteca con jamón crudo y cocido, champignon, crema natural, puerro juliana, salsa barbacoa y demiglace. Acompañado con crocante de papa.</div>
+  <div class="salsa"><strong>Dublin:</strong> salteados en manteca con jamón crudo y cocido, champignon, crema natural, puerro juliana, salsa barbacoa y demi-glace. Acompañado con crocante de papa.</div>
   <div class="menu-item"><span></span></div>
   <div class="salsa"><strong>Dijon:</strong> aromatizado con estragón y mostaza francesa y salsa blanca. Guarnición de papas noissette.</div>
   <div class="menu-item"><span></span></div>
@@ -555,7 +575,7 @@ details[open] summary::after {
 
 <h2>Otras Variedades de Cerdo Elaborados:<span> $33.000</span></h2>
 <div class="menu-item"><span></span></div>
-  <div class="salsa"><strong>Churrasquito de Cerdo Su Casa:</strong> salsas demiglace y fileto, cebollita de verdeo, ajo, morrón y papas noissette.</div>
+  <div class="salsa"><strong>Churrasquito de Cerdo Su Casa:</strong> salsas demi-glace y fileto, cebollita de verdeo, ajo, morrón y papas noissette.</div>
   <div class="menu-item"><span></span></div>
   <div class="salsa"><strong>Costillitas de Cerdo a La Riojana:</strong> costillitas grilladas acompañadas con jamón cocido, arvejas, morrones, huevos fritos y papas fritas españolas.</div>
   <div class="menu-item"><span></span></div>
@@ -566,15 +586,13 @@ details[open] summary::after {
 
 
 <details>
-  <summary style="font-size: 24px ; color:black; font-weight:bold;font">Lomos de Ternera Elaborados</summary>
-
-<h2>Lomos de Ternera Elaborados:<span> $49.500</span></h2>
-
+  <summary style="font-size: 24px ; color:black; font-weight:bold;font">Lomos de Ternera Elaborados: $49.500</summary>
+ <div class="menu-item"><span></span></div>
     <!-- BLOQUE DE SALSAS -->
 <details class="salsas-box">
   <summary>SALSAS</summary>
     <div class="menu-item"><span></span></div>
-  <div class="salsa"><strong>Diabla:</strong> salsa elaborada con cebolla, morrón, vino malbec, salsa demiglace y pimienta. Guarnición de puré de espinacas.</div>
+  <div class="salsa"><strong>Diabla:</strong> salsa elaborada con cebolla, morrón, vino malbec, salsa demi-glace y pimienta. Guarnición de puré de espinacas.</div>
   <div class="menu-item"><span></span></div>
   <div class="salsa"><strong>Roquefort:</strong> con guarnición de papas noissette.</div>
   <div class="menu-item"><span></span></div>
@@ -590,7 +608,7 @@ details[open] summary::after {
   <div class="menu-item"><span></span></div>
   <div class="salsa"><strong>Montero:</strong> rodajitas de lomo, sarteneado en mantequilla con cebollines, morrón, orégano, crema, salsa roja, queso parmesano y champignones. Guarnición de puré y papas rejillas.</div>
   <div class="menu-item"><span></span></div>
-  <div class="salsa"><strong>Dublin:</strong> salteados en manteca con jamón crudo y cocido, champignones, crema natural, puerro juliana, salsa barbacoa y demiglace. Acompañado con crocantes de papa.</div>
+  <div class="salsa"><strong>Dublin:</strong> salteados en manteca con jamón crudo y cocido, champignones, crema natural, puerro juliana, salsa barbacoa y demi-glace. Acompañado con crocantes de papa.</div>
   <div class="menu-item"><span></span></div>
   <div class="salsa"><strong>Su Casa:</strong> gratinado con mozzarella y jamón. Acompañado de arvejas, morrón al ajo, guarnición noissette de zanahoria, de papa y de remolacha. Espárragos y puré de papas.</div>
   <div class="menu-item"><span></span></div>
@@ -606,12 +624,7 @@ details[open] summary::after {
 
 <div class="menu-item"><span></span></div>
   <div class="menu-item"><span>Bife de Chorizo a la Pimienta Negra</span><span>$53.000</span></div>
-  <div class="menu-item"><span></span></div>
-  <div class="menu-item"><span>MILANESAS DE TERNERA SOLA (Sin guarción)</span><span>$20.500</span></div>
-  <div class="menu-item"><span>MILANESAS DE TERNERA A LA NAPOLITANA (Sin guarnición)</span><span>$25.500</span></div>
-  <div class="menu-item"><span>MILANESAS DE PECETO (4 u. con guarnición de papas fritas)</span><span>$33.000</span></div>
-  <div class="menu-item"><span>MILANESAS DE PECETO A LA NAPOLITANA (4 u. con guarnición de papas fritas)</span><span>$38.000</span></div>
-  <div class="menu-item"><span></span></div>
+
 </div>
 </details>
 
@@ -791,6 +804,7 @@ details[open] summary::after {
   <div class="menu-item"><span></span></div>
   <div class="salsa"><strong>Sorbete Tropical: </strong> helado de americana, licor de menta, crema chantilly y chocolate caliente.</div>
   <div class="menu-item"><span></span></div>
+  <div class="salsa"><strong>Que Goloso: </strong> helado de americana con salsa de frutos del bosque, crema chantilly, dulce de leche natural, chocolate caliente y merenguitos.</div>
 
 </div>
 </details>
@@ -834,11 +848,6 @@ details[open] summary::after {
 <div class="menu-item"><span>Con crema ó jugo de naranja</span><span>$10.000</span></div>
 <div class="menu-item"><span>Al marsala</span><span>$10.000</span></div>
 <div class="menu-item" style="font-weight:bold;"><span>Frutillas a la Parissiene</span><span>$15.000</span></div>
-
-<div class="menu-item"><span></span></div>
-
-<h3>QUE GOLOSO:<span> $11.000</span></h3>
-<span>Helado de americana con salsa de frutos del bosque, crema chantilly, dulce de leche natural, chocolate caliente y merenguitos.</span>
 
 <div class="menu-item"><span></span></div>
 
@@ -915,7 +924,6 @@ details[open] summary::after {
 <div class="menu-item"><span>Salsas de chocolate ó frutilla</span><span>$1.000</span></div>
 <div class="menu-item"><span>Nueces ó almendras</span><span>$3.500</span></div>
 
-<div class="menu-item"><span></span></div>
  </div>
 </details>
 
@@ -1201,6 +1209,29 @@ details[open] summary::after {
 
 </div>
 </details> 
+
+<p class="aviso">
+  Las 1/2 porciones y las porciones compartidas recargan en un 30% adicional. Ejemplo: Porción $1.000 - 1/2 porción $650. 
+</p>
+
+<div class="footer">
+  
+  <div class="pagos">
+    <strong>Medios de pago</strong><br>
+    Efectivo · Tarjetas de crédito/débito · Mercado Pago
+  </div>
+
+  <div class="direccion">
+    <strong>Dirección</strong><br>
+    Colectora Panamericana Oeste 1968 (casi Thames) - San Isidro
+</div>
+
+    <div class="telefono">
+    <strong>Teléfono</strong><br>
+    116175-3406
+  </div>
+
+</div>
 
 <div style="text-align:center;">
   <a href="https://wa.me/5491161753406" class="button whatsapp">📱 NUESTRO WHATSAPP</a>
