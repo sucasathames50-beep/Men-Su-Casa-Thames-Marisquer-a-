@@ -22,10 +22,32 @@ header {
   margin-bottom: 20px;
 }
 
-.section {
-  padding: 20px;
+.top-bar {
+  background-color: #b01212; /* bordo */
+  color: #ffffee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 20px;
+  font-size: 14px;
+  border-bottom: 1px solid #ffffee;
 }
+
+.top-bar a {
+  color: #fff;
+  margin-right: 12px;
+  text-decoration: none;
+  transition: 0.3s;
 }
+
+.top-bar a:hover {
+  opacity: 0.7;
+}
+
+.top-right span {
+  margin-left: 15px;
+}
+
 
 h1 {
   margin: 0;
@@ -111,7 +133,19 @@ h2 {
 
 </style>
 </head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<div class="top-bar">
+  <div class="top-left">
+    <a href="https://www.facebook.com/p/Su-Casa-Restaurante-San-Isidro-100064317987173/?locale=es_LA"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/sucasasanisidro/?hl=es"><i class="fab fa-instagram"></i></a>
+    <a href="https://wa.me/5491161753406"><i class="fab fa-whatsapp"></i></a>
+  </div>
 
+  <div class="top-right">
+<span>📞 <a href="tel:+541161753406">116175-3406</a></span>
+<span>✉️ <a href="mailto:sucasathames@gmail.com">sucasathames@gmail.com</a></span>
+  </div>
+</div>
 <body>
 
 <header>
@@ -188,7 +222,6 @@ details[open] > summary::after {
 }
 
 </style>
-
 <p class="aviso">
   Las 1/2 porciones y las porciones compartidas recargan en un 30% adicional. Ejemplo: Porción $1.000 - 1/2 porción $650. 
 </p>
@@ -1252,11 +1285,6 @@ details[open] > summary::after {
     116175-3406
   </div>
 
-</div>
-
-<div style="text-align:center;">
-  <a href="https://wa.me/5491161753406" class="button whatsapp">📱 NUESTRO WHATSAPP</a>
-  <a href="https://www.instagram.com/sucasasanisidro/?hl=es" class="button instagram">📷 NUESTRO INSTAGRAM</a>
 </div>
 
 </body>
